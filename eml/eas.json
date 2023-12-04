@@ -1,0 +1,31 @@
+{
+    "build": {
+        "preview": {
+            "android": {
+                "buildType": "apk"
+            }
+        },
+        "production": {
+            "android": {
+                "autoIncrement": true,
+                "buildType": "app-bundle"
+            }
+        }
+    },
+    "submit": {
+        "internal": {
+            "android": {
+                "track": "internal",
+                "releaseStatus": "completed",
+                "serviceAccountKeyPath": "./google-play-developer-services.json"
+            }
+        },
+        "production": {
+            "android": {
+                "track": "production",
+                "releaseStatus": "completed",
+                "serviceAccountKeyPath": "./google-play-developer-services.json"
+            }
+        }
+    }
+}
